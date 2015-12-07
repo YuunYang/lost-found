@@ -14,3 +14,26 @@ ul {
     padding: 0px;
     margin: 0px;
 }
+
+/*
+	Chrome input textarea fix
+*/
+
+input, button, select, textarea {
+    outline: none
+}
+textarea {
+    resize: none
+}
+
+/*
+	Safari input textarea fix
+*/
+textarea,
+input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+	-webkit-appearance: none;
+    border-radius: 0;
+}

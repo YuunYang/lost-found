@@ -13,61 +13,47 @@
 </head>
 
 <body>
-	<div id="form0" class="form" style="width: 100% min-height 1024px;">
-		<header id="lostheader">
-			<p class="ptitle" id="ptitle">失物招领平台</p>
-		</header>
-		<form class="contact_form" action="lost_post.php" method="post" name="contact_form" enctype="multipart/form-data">
-			<ul>
-				<select name="type0" class="type">
-					<option value="">选择物品类型</option>
-					<option value="lost">失物招领</option>
-					<option value="found">寻物启事</option>
-				</select>
-				<li>
-					<input type="text" class="input_1" id="name" name="name" placeholder="联系人姓名" />
-				</li>
-				<li>
-					<input type="text" class="input_1" id="telphone" name="telphone" placeholder="联系人电话" />
-				</li>
-				<li>
-					<input type="text" class="input_1" id="qq" name="qq" placeholder="QQ号码" />
-				</li>
-				<div id="asterisk1">
-					*
-				</div>
-				<div id="asterisk2">
-					*</br>
-					<span id="a">（选填）</span>
-				</div>
-				<div id="asterisk3">
-					&nbsp;*
-				</div>
-				<select name="type1" class="type">
-					<option value="">钥匙</option>
+	<header id="lostheader">
+		<p class="ptitle" id="ptitle">失物招领平台</p>
+	</header>
+	<form class="contact_form" action="lost_post.php" method="post" name="contact_form" enctype="multipart/form-data">
+		<select name="type0" class="type">
+			<option value="">选择物品类型</option>
+			<option value="lost">失物招领</option>
+			<option value="found">寻物启事</option>
+		</select>
+		<input type="text" class="input_1" id="name" name="name" placeholder="联系人姓名" />
+		<input type="text" class="input_1" id="telphone" name="telphone" placeholder="联系人电话" />
+		<input type="text" class="input_1" id="qq" name="qq" placeholder="QQ号码" />
+		<div id="asterisk1">
+			*
+		</div>
+		<div id="asterisk2">
+			<p>*</p>
+			<p id="a">（选填）</p>
+		</div>
+		<div id="asterisk3">
+			&nbsp;*
+		</div>
+		<select name="type1" class="type">
+			<option value="">钥匙</option>
 
-					<option value="">手机</option>
+			<option value="">手机</option>
 
-					<option value="">钱包</option>
+			<option value="">钱包</option>
 
-					<option value="">证件</option>
+			<option value="">证件</option>
 
-					<option value="">书籍</option>
+			<option value="">书籍</option>
 
-					<option value="">其他</option>
-				</select>
-				<li class="file_upload">
-					<input type="file" id="image" name="image" value="图片" />
-				</li>
-				<li>
-					<textarea id="message" name="message" cols="40" rows="6" placeholder="请添加细节描述，不超过300字"></textarea>
-				</li>
-				<li>
-					<input id="btn1" value="提&nbsp;&nbsp;&nbsp;交" type="submit" />
-				</li>
-			</ul>
-		</form>
-	</div>
+			<option value="">其他</option>
+		</select>
+		<div class="file_upload">
+			<input type="file" id="image" name="image" value="图片" />
+		</div>
+		<textarea id="message" name="message" cols="40" rows="6" placeholder="请添加细节描述，不超过300字"></textarea>
+		<input class="footer" value="提&nbsp;&nbsp;&nbsp;交" type="submit" />
+	</form>
 </body>
 
 </html>

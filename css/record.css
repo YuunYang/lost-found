@@ -53,11 +53,11 @@
 }
 #asterisk1 {
     width: 60px;
-    height: 48px;
+    height: 47px;
     position: absolute;
     float: left;
     font-size: 28px;
-    line-height: 68px;
+    line-height: 65px;
     text-align: center;
     color: #5e9264;
     background-color: #fff;
@@ -66,21 +66,25 @@
 }
 #asterisk2 {
     width: 60px;
-    height: 52px;
+    height: 56px;
     position: absolute;
     float: left;
     font-size: 28px;
-    line-height: 6px;
+    line-height: 12px;
     text-align: center;
     color: #5e9264;
     background-color: #fff;
-    padding-top: 45px;
-    top: 168px;
+	padding-top: 38px;
+    top: 167px;
     left: 0px;
+}
+#asterisk2 p {
+	margin: 0px;
+	padding: 0px;
 }
 #asterisk3 {
     width: 50px;
-    height: 200px;
+    height: 190px;
     position: absolute;
     float: left;
     font-size: 28px;
@@ -89,7 +93,7 @@
     color: #5e9264;
     background-color: #fff;
     border-right: 1px #d4d4d4 solid;
-    top: 350px;
+    top: 345px;
     left: 0px;
 }
 #a {
@@ -102,6 +106,7 @@
     font-size: 16px;
     color: #878787;
     margin-top: 10px;
+	margin-bottom: 80px;
     padding: 20px 0px 0px 60px;
     border-top: 1px #d4d4d4 solid;
     border-bottom: 1px #d4d4d4 solid;
@@ -122,7 +127,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 60% 60%;
-    top: 480px;
+    top: 465px;
     left: 58px;
 }
 #image {
@@ -134,21 +139,17 @@
     filter: alpha(opacity=0);
     cursor: pointer;
 }
-#btn1 {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 180px;
-    height: 30px;
-    border: 1px #878787 solid;
-    border-radius: 5px;
-    color: #878787;
-    font-size: 15px;
-    background-color: #eaeaea;
-}
-input, button, select, textarea {
-    outline: none
-}
-textarea {
-    resize: none
+.footer {
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #18b4ed;
+    letter-spacing: 3px;
+	border: none;
 }
