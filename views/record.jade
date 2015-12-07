@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='css/record.css')
+    header#lostheader
+        p#ptitle.ptitle 失物登记
+    .contact_form
+        select.type(name='type0')
+            option(value='') 选择物品类型
+            option(value='lost') 失物招领
+            option(value='found') 寻物启事
+        input#name.input_1(type='text', name='name', placeholder='联系人姓名')
+        input#telphone.input_1(type='text', name='telphone', placeholder='联系人电话')
+        input#qq.input_1(type='text', name='qq', placeholder='QQ号码')
+        #asterisk1 *
+        #asterisk2
+            p *
+            p#a （选填）
+        #asterisk3 *
+        select.type(name='type1')
+            option(value='') 钥匙
+            option(value='') 手机
+            option(value='') 钱包
+            option(value='') 证件
+            option(value='') 书籍
+            option(value='') 其他
+        .file_upload
+            input#image(type='file', name='image', value='图片')
+        textarea#message(name='message', cols='40', rows='6', placeholder='请添加细节描述，不超过300字')
+        button.footer 提交

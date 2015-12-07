@@ -1,0 +1,30 @@
+extends layout
+
+block content
+    link(rel='stylesheet', href='css/list.css')
+    header#lostheader
+        #logo_border
+            img#logo(src='./images/logo.jpg')
+        #title
+            p#ptitle.ptitle 失物招领平台
+            p#ptitle.subtitle 工大助手
+    .line 发帖须知（免责声明）
+    .line 文章、广告、轮播图
+
+    ul#list
+        - for(var i=0; i<=50; i++)
+            li.item
+                .item_left
+                    .item_type 钥匙
+                    .item_left_sub
+                        .head_img_border
+                            img#head_img(src='./images/sample.png')
+                .item_content
+                    .item_des
+                        p 2015 - 10 - 09 周五
+                        p 本人于9日下午在图书馆见到一串钥匙。以下是图片～请联系我
+                    .item_img
+                        img(src='./images/key.png')
+                        img(src='./images/key.png')
+                        img(src='./images/key.png')
+    a.footer(href='./record.html') 发布信息
