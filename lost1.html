@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<meta charset="UTF-8" />
+	<title>失物招领表单1</title>
+	<link rel="stylesheet" href="css/lost1.css" />
+	<script src="js/jquery-2.1.4.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+	<div id="form0" class="form" style="width: 100% min-height 1024px;">
+	<header id="lostheader">
+    <p class="ptitle" id="ptitle">失物招领平台</p>
+  	</header>
+	<form class="contact_form" action="lost_post.php" method="post" name="contact_form" enctype="multipart/form-data">
+		<ul>
+			<select name="type0" id="type0" >
+			<option value="lost">失物招领</option>
+    		<option value="found">寻物启事</option>
+			</select>
+			<li>
+				<input type="text" name="name" placeholder="联系人姓名" />
+			</li>
+			<li>
+				<input type="text" name="telphone" placeholder="联系人电话" />
+			</li>
+			<li>
+				<input type="text" name="qq" placeholder="QQ号码" />
+			</li>
+			<select name="type1" id="type1" >
+			<option value="">钥匙</option>
+    		<option value="">手机</option>
+    		<option value="">钱包</option>
+    		<option value="">证件</option>
+    		<option value="">书籍</option>
+    		<option value="">其他</option>
+			</select>
+			<li>
+				<input type="file" id="image" name="image" value="图片"/>
+				<textarea name="message" cols="40" rows="6" placeholder="请添加细节描述，不超过300字"></textarea>
+			</li>
+		</ul>
+		<input class="btn1" value="提交" type="submit" />
+		</form>
+		</div>
+</body>
+</html>
